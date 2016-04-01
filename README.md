@@ -3,7 +3,7 @@ Sound sampling studies, create original wave sound with pure PHP
 
 ## Installation on Ubuntu
 Download the fs-sound zip file
-Extract the zip in the directory ycdou want to record your wave files
+Extract the zip in the directory you want to store your wave files  
 Make an alias in your .bash_aliases
 ```
 alias='/my/audio/directory/fs-sound/src/./fs-sound.php'
@@ -22,7 +22,7 @@ Example :
 fs-sound audio.wav 440.0 5.0
 ```
 That will generate a sound with 440Hz frequency during 5 seconds record in a audio.wav audio file  
-You can verify you file after create your audio sound with
+You can verify your file after create your audio sound with
 ```
 cd /my/audio/directory/fs-sound/src
 file audio.wav
@@ -30,7 +30,7 @@ file audio.wav
 
 ## Listen the sound
 
-On ubuntu you sox to play the created sound
+On ubuntu you can use sox to play the created sound
 ```
 sudo apt-get install sox
 ```
