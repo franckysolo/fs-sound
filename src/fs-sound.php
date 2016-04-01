@@ -3,7 +3,7 @@
 /**
  * @author franckysolo
  * 
- * @version prototype function from C version
+ * @version prototype function implementation from C version
  * 
  * @see http://soundfile.sapp.org/doc/WaveFormat/
  */
