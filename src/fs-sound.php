@@ -48,7 +48,7 @@ EOS;
 function fs_sound($filename, $t1, $t2, $f, $amp) {
 
 	// Paramètres
-	$PCM = 1; 				// Compression PCM
+	$PCM = 1; 			// Compression PCM
 	$channel_count 	= 2; 		// Stéréo
 	$bits_per_sample = 16; 		// 16 BIT
 	$sample_rate = 44100; 		// Taux d'échantillonage
