@@ -20,7 +20,7 @@ if (count($args) != 4) {
 }
 
 array_shift($args);
-list($filename, $frequence, $duration) = $args;
+list($filename, $frequency, $duration) = $args;
 
 /**
  * Dipslay Help
@@ -30,7 +30,7 @@ list($filename, $frequence, $duration) = $args;
 function fs_sound_usage() {	
 	echo <<<EOS
 fs-sound usage : 
-	\e[33mfs-sound <filename> <frequence> <duration>\e[0m
+	\e[33mfs-sound <filename> <frequency> <duration>\e[0m
 ex : fs-sound audio.wav 440.0 5.0
 EOS;
 	echo PHP_EOL;
@@ -42,7 +42,7 @@ EOS;
  * @param string $filename
  * @param float $t1 start time
  * @param float $t2 end time
- * @param float $f freq of sample
+ * @param float $f frequency
  * @param float $amp amplitude
  */
 function fs_sound($filename, $t1, $t2, $f, $amp) {
@@ -108,7 +108,7 @@ function fs_sound($filename, $t1, $t2, $f, $amp) {
 }
 
 // Génération d'un son a $frequence Hz pendant $duration sec
-fs_sound($filename, 0.0, $duration, $frequence, 1.0);
+fs_sound($filename, 0.0, $duration, $frequency, 1.0);
 
 echo "[fs-sound] : Audio file is create...\e[32m[ok]\e[0m";
 echo PHP_EOL;
