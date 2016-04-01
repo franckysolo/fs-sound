@@ -65,19 +65,19 @@ function fs_sound($filename, $t1, $t2, $f, $amp) {
 
 	// Entete du fichier Wave
 	$headers = array (
-			hexdec(bin2hex("RIFF")),
-			36 + $sub_chunk_size,
-			hexdec(bin2hex("WAVE")),
-			hexdec(bin2hex("fmt ")),
-			16,
-			$PCM,
-			$channel_count,
-			$sample_rate,
-			$byte_rate,
-			$block_align,
-			$bits_per_sample,
-			hexdec(bin2hex("data")),
-			$size * $channel_count * ($bits_per_sample / 8)
+		hexdec(bin2hex("RIFF")),
+		36 + $sub_chunk_size,
+		hexdec(bin2hex("WAVE")),
+		hexdec(bin2hex("fmt ")),
+		16,
+		$PCM,
+		$channel_count,
+		$sample_rate,
+		$byte_rate,
+		$block_align,
+		$bits_per_sample,
+		hexdec(bin2hex("data")),
+		$size * $channel_count * ($bits_per_sample / 8)
 	);
 
 	// Onde sonore de min à max
